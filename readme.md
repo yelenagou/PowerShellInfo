@@ -193,6 +193,9 @@ $wsh.Popup("Isnt this fun?",10,"PowerShell Automation",0+64)
 `$PSDefaultParameterValues.Add("get-eventlog:logname","system")`
 `$PSDefaultParameterValues.Clear()`
 
+### Comparing two files
+`Compare-Object -ReferenceObject (Get-Content -Path C:\repos\sql\spQA.sql) -DifferenceObject (Get-Content -Path C:\repos\sql\spUAT.sql)`
+
 
 
 
